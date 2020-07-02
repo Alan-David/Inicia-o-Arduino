@@ -5,7 +5,7 @@ int valor = 3; //Escolha um valor de 1 a 3 para a variável.
 
 void setup(){
   
-	pinMode(porta13, OUTPUT);
+    pinMode(porta13, OUTPUT);
     pinMode(porta12, OUTPUT);
     pinMode(porta11, OUTPUT);
 }
