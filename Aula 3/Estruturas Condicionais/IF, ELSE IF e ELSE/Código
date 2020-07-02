@@ -1,6 +1,7 @@
 int porta13 = 13;
 int porta12 = 12;
 int porta11 = 11;
+int valor = 3; //Escolha um valor de 1 a 3 para a variável.
 
 void setup(){
   
@@ -10,12 +11,13 @@ void setup(){
 }
 
 void loop(){
-  if(porta11 == 11){
-    digitalWrite(porta11, HIGH);
-  )else if(porta12 == 12){
+  
+  if (valor == 1){
+    digitalWrite(porta11, HIGH); 
+  }else if(valor == 2){
     digitalWrite(porta12, HIGH);
-  }else if(porta13 == 13){
-    digitalWrite(porta13, HIGH); 
+  }else if(valor == 3){
+    digitalWrite(porta13, HIGH);
   }else{
     digitalWrite(porta11, LOW);
     digitalWrite(porta12, LOW);
