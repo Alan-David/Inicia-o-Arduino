@@ -1,0 +1,26 @@
+int pino12 = 12;
+int x = 0;
+
+void setup(){
+
+  pinMode(pino12, OUTPUT);
+  //Serial.begin(9000);
+  
+}
+
+void loop(){  
+
+    do{
+    
+      digitalWrite(pino12, HIGH);  
+      x=x+1; // ou x++;
+      delay(2000);	  
+      //Serial.print(x);
+   
+  }while(x <= 2);
+  
+  digitalWrite(pino12, LOW);
+  delay(3000);
+  
+}
+
