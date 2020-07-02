@@ -1,0 +1,14 @@
+int Pinofalante = 9;
+
+void setup(){
+  
+   pinMode(Pinofalante,OUTPUT); 
+}
+
+void loop(){
+
+  tone(Pinofalante, 261);   //Irá tocar somente uma nota "C".
+    delay(250);
+  noTone(Pinofalante);
+  
+}
