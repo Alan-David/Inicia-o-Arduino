@@ -1,0 +1,10 @@
+1) Sites para calcular resistor:
+  1.1 -> https://br.mouser.com/technical-resources/conversion-calculators/resistor-color-code-calculator
+                                             OU  
+  1.2 -> http://www.audioacustica.com.br/exemplos/Valores_Resistores/Calculadora_Ohms_Resistor.html  
+  
+2) Essa aula foi mais exploratória sobre o Hardware e o Software do Arduino.
+  2.1 -> Software nativo (Arduino IDE) - Programável em C/C++;
+  2.2 -> Existem diferentes modelos de placas arduino, algumas vocês podem conferir no site abaixo:   
+    2.2.1 -> https://medium.com/tht-things-hackers-team/tipos-de-arduino-3c3206c46bc
+  2.3 -> Vale destacar que o arduino pode ser expandido com módulos!
