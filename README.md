@@ -1,1 +1,5 @@
-# Inicia-o-Arduino
+# Iniciação a Robótica Arduino
+
+Seja bem-vindo ao curso de Iniciação em Robótica Arduino. Durante nossa trajetória iremos conhecer os princípios fundamentais para o funcionamento de componentes eletrônicos. Estes, serão a base para que possamos iniciar os primeiros projetos de robótica. Dessa forma, iremos conhecer desde os conceitos de eletrônica, como corrente tensão e resistência. Logo após, iremos conhecer a plataforma Arduino e explorar as suas características. Além disso, iremos praticar com simuladores de maneira online, e o circuito simulado será montado nas aulas presenciais. Esses são os primeiros passos para conhecer o grande universo do Arduino e da robótica. É preciso foco, disciplina, vontade de aprender e ir em busca desse conhecimento. A comunidade da plataforma Arduino é atuante e participativa, portanto você pode trocar informações com diversas pessoas além dos colegas de classe. Busque conhecimento, se torne um aprendendor. 
+
+Instrutores: Alan David e Caleb Ferreira.
