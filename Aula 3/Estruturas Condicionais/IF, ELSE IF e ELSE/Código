@@ -1,0 +1,24 @@
+int porta13 = 13;
+int porta12 = 12;
+int porta11 = 11;
+
+void setup(){
+  
+	pinMode(porta13, OUTPUT);
+    pinMode(porta12, OUTPUT);
+    pinMode(porta11, OUTPUT);
+}
+
+void loop(){
+  if(porta11 == 11){
+    digitalWrite(porta11, HIGH);
+  )else if(porta12 == 12){
+    digitalWrite(porta12, HIGH);
+  }else if(porta13 == 13){
+    digitalWrite(porta13, HIGH); 
+  }else{
+    digitalWrite(porta11, LOW);
+    digitalWrite(porta12, LOW);
+    digitalWrite(porta13, LOW);
+  }
+}
