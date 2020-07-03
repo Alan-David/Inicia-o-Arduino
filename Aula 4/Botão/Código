@@ -1,1 +1,21 @@
-EMPTY
+int botao = 4; 
+int contar;
+int estado;
+
+void setup(){
+  
+  pinMode(botao, INPUT); //Lembrando de manter o botão pressionado para captura!
+  Serial.begin(9600);	 
+}
+
+void loop(){
+  estado = digitalRead(botao);
+  if(estado==HIGH){
+     contar++;
+     delay(300);
+     Serial.println(contar);
+  }else{
+     Serial.println("Botao nao pressionado!");
+     delay(1000);
+  }
+}
