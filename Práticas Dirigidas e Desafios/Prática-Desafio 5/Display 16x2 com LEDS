@@ -1,0 +1,27 @@
+#include <LiquidCrystal.h> //Carrega a biblioteca LiquidCrystal
+
+LiquidCrystal lcd(12, 11, 5, 4, 3, 2);
+#define ledpin1 10
+#define ledpin2 9
+ 
+void setup(){
+  lcd.begin(16, 2); 
+}
+void loop(){
+  lcd.clear();
+  lcd.setCursor(0, 0); 
+  lcd.print("LED VERDE ON");
+  digitalWrite(ledpin1, HIGH);
+  
+  delay(4000);//Aguarda 4s
+  lcd.clear();// Limpa a tela
+  digitalWrite(ledpin1, LOW);//Apaga led Verde
+  
+  lcd.setCursor(0, 1);
+  lcd.print("LED LARANJA ON");
+  digitalWrite(ledpin2, HIGH);
+  
+  delay(4000);//Aguarda 4s
+  lcd.clear();// Limpa a tela
+  digitalWrite(ledpin2, LOW);//Apaga led Verde
+}
