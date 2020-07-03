@@ -1,0 +1,33 @@
+int led = 9;
+int botao = 8;
+int lerpino = 0;
+boolean estado = false;
+
+void setup(){
+  
+  pinMode(led,OUTPUT);
+  pinMode(botao,INPUT);
+  Serial.begin(9600);
+  
+}
+
+void loop(){
+  
+  lerpino = digitalRead(botao);
+  switch (lerpino){
+    case 1:
+    estado = !estado;
+    delay(300);
+    break;
+  }
+  
+  switch (estado){
+    case true:
+    digitalWrite(led, HIGH);
+    break;
+    
+    case false:
+    digitalWrite(led, LOW);
+    break;
+  }
+}
