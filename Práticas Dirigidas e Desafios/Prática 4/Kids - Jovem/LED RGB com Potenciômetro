@@ -1,0 +1,44 @@
+//PORTAS PWM
+int vermelho = 11;
+int azul = 10;
+int verde = 9;
+//PINOS POTENCIÔMETRO
+int pot1 = A0;
+int pot2 = A1;
+int pot3 = A2;
+//VARIAVEIS AUXILIARES
+int vpot1;
+int vpot2;
+int vpot3;
+//
+int v1; // Conversão (0-1023 -> 0-255)
+int v2;
+int v3;
+
+void setup(){
+  
+  pinMode(pot1, INPUT);
+  pinMode(pot2, INPUT);
+  pinMode(pot3, INPUT);
+  pinMode(vermelho, OUTPUT);
+  pinMode(azul, OUTPUT);
+  pinMode(verde, OUTPUT);
+  Serial.begin(9600);
+  
+}
+
+void loop(){
+  
+  vpot1 = analogRead(pot1); 
+  vpot2 = analogRead(pot2);
+  vpot3 = analogRead(pot3);
+    
+  v1 = map(vpot1, 0, 1023, 0, 255);
+  v2 = map(vpot2, 0, 1023, 0, 255);
+  v3 = map(vpot3, 0, 1023, 0, 255);
+  
+  analogWrite(vermelho, v1);
+  analogWrite(verde, v2);
+  analogWrite(azul, v3);
+  
+}
