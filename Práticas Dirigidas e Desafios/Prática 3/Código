@@ -1,1 +1,25 @@
-EMPTY
+void setup(){
+  pinMode(13, OUTPUT);
+  pinMode(12, OUTPUT);
+  pinMode(11, OUTPUT);
+  pinMode(10, OUTPUT);
+  pinMode(9, OUTPUT);
+  Serial.begin(9600);
+}
+
+void loop(){
+  
+ digitalWrite(11, HIGH);
+ digitalWrite(12, HIGH);
+ Serial.println("Sinal Veículo fechado e Pedestre aberto");
+ delay(5000); // Espera 5s
+ digitalWrite(11, LOW);
+ digitalWrite(12, LOW);
+  
+ digitalWrite(9, HIGH);
+ digitalWrite(13, HIGH);
+ Serial.println("Sinal Veículo aberto e Pedestre fechado");
+ delay(5000); // Espera 5s
+ digitalWrite(9, LOW);
+ digitalWrite(13, LOW);
+}
