@@ -13,6 +13,7 @@ pode assumir grandezas que podem ter infinitos valores de amplitude, dentro de u
 no arduino Uno. É possível usar para ter valores variados e criar ranges de gatilho.
 ====================================================================================================================================================================
 3) As portas digitais (algumas delas) apresentam uma função PWM. Em que situação seria ideal o uso da função PWM?
+
 R= É um simulador de saída analógica, é a técnica para simular sápidas analógicas através do PWM, obtém-se resultados analógicos por meio digital, são os pinos 3,4,
 6,9,10 e 11. Consiste na geração de uma onda quadrada, na qual, controla-se a percentagem ao tempo em que a onda permanece em nível lógico alto. Controle de veloci-
 dade de motores, variação da luminosidade de leds, geração de sinais analógicos, geração de sinais de áudio.
@@ -28,7 +29,6 @@ sinal serial (UART), e este sim pode lido pelo processador principal. Podemos di
 
 R= O Arduino é resetado ou tem seu código apagado da memória se o botão for pressionado por alguns segundos.
 ====================================================================================================================================================================
-
 Referências:
 https://www.napratica.org.br/prototipagem-garante-sucesso-do-negocio/
 http://www.embarcados.com.br | https://portal.vidadesilicio.com.br/entradas-e-saidas-analogicas/
