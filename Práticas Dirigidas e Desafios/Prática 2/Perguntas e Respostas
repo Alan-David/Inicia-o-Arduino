@@ -1,0 +1,35 @@
+1) O que é prototipagem, como e por que isso é utilizado em projetos de eletrônica e robótica?
+
+R= Em um projeto com várias fases, é interessante fabricar um modelo em cada uma das etapas que surja algo a se testar. Não precisa ser sofisticado; o ideal é que 
+ele seja bem barato – sua função é apenas de avaliação. É a partir dele que as melhorias no produto vão ser feitas. Então há grandes chances de falha, mau funcio-
+namento, ou até reprovação de usuários. 
+
+====================================================================================================================================================================
+2) O Arduino possui portas digitais e analógicas. O que isso significa? Como funciona o sinal digital e analógico? Em que situações são utilizadas portas as
+digitais e analógicas do Arduino?
+
+R= O arduino aceita diferentes formas de sinais. O sinal digital só pode assumir 2 estados, high e low, ou seja, 0v ou 5v (chamado dados digitais).O sinal analógico 
+pode assumir grandezas que podem ter infinitos valores de amplitude, dentro de uma faixa entre 0v e 5v. O range é conhecido se dividir em 1024 pedaços (0,0048828 V) 
+no arduino Uno. É possível usar para ter valores variados e criar ranges de gatilho.
+====================================================================================================================================================================
+3) As portas digitais (algumas delas) apresentam uma função PWM. Em que situação seria ideal o uso da função PWM?
+R= É um simulador de saída analógica, é a técnica para simular sápidas analógicas através do PWM, obtém-se resultados analógicos por meio digital, são os pinos 3,4,
+6,9,10 e 11. Consiste na geração de uma onda quadrada, na qual, controla-se a percentagem ao tempo em que a onda permanece em nível lógico alto. Controle de veloci-
+dade de motores, variação da luminosidade de leds, geração de sinais analógicos, geração de sinais de áudio.
+
+====================================================================================================================================================================
+4) O Arduino possui um conversor USB-Serial. Para que esse componente é utilizado?
+
+R= O processador USB, nomeado como U3 no esquema ao lado, é responsável por fazer a comunicação do Arduino com o seu PC através da porta USB. Ele é necessário, pois 
+o processador principal do Arduino (ATmega328) não suporta conexão direta com uma porta USB. Dessa forma, o processador USB converte os dados da USB do PC para um 
+sinal serial (UART), e este sim pode lido pelo processador principal. Podemos dizer então, que o processador USB funciona como um conversor USB-Serial.
+====================================================================================================================================================================
+5 – O Arduino possui na maioria dos modelos um botão de RESET. O que acontece quando esse botão é pressionado?
+
+R= O Arduino é resetado ou tem seu código apagado da memória se o botão for pressionado por alguns segundos.
+====================================================================================================================================================================
+
+Referências:
+https://www.napratica.org.br/prototipagem-garante-sucesso-do-negocio/
+http://www.embarcados.com.br | https://portal.vidadesilicio.com.br/entradas-e-saidas-analogicas/
+https://eletroshields.com.br/entendendo-o-arduino-uno-o-guia-definitivo/
