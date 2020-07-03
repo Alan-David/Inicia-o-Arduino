@@ -1,1 +1,33 @@
-EMPTY
+//ATENÇÃO! LIGADO EM PWM
+int azul = 10;
+
+//PINO DO POTENCIÔMETRO
+int pot = A0;
+//VARIAVEL AUXILIAR
+int vpot;
+int resultado;
+
+void setup(){
+  
+  pinMode(pot, INPUT);
+  pinMode(azul, OUTPUT);
+  Serial.begin(9600);
+  
+}
+
+void loop(){
+  
+  vpot = analogRead(pot); 
+    
+  resultado = map(vpot, 0, 1023, 0, 255);
+  
+  analogWrite(azul, resultado);
+  
+}
+
+  
+
+
+
+ 
+
