@@ -1,20 +1,24 @@
-int pinoLDR = 2;
-int pinoLED = 4; 
+int pinoLDR = A3;  //PORTA ANALÓGICA PARA CAPTURA DE SINAIS
+int pinoLED = 3;   //LED NA PWM PARA VARIAÇÃO DE INTENSIDADE 
 
 void setup()
 {
 	pinMode(pinoLDR, INPUT);
   	pinMode(pinoLED, OUTPUT);
+    Serial.begin(9600);
 }
 
 void loop()
 {
   int luminosidade=analogRead(pinoLDR);
+  luminosidade = map(luminosidade, 0, 1023, 0, 255); //ESTOU UTILIZANDO UMA SAIDA ANALÓGICA E CONVERTENDO A FAIXA
+  //Serial.println(luminosidade);
+  delay(1000);
   
   if(luminosidade==LOW){
-  	digitalWrite(pinoLED, HIGH);
+  	analogWrite(pinoLED, luminosidade);
   }else{
-  	digitalWrite(pinoLED, LOW);
+  	analogWrite(pinoLED, luminosidade);
   }
     
 }
