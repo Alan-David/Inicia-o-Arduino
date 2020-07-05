@@ -3,8 +3,8 @@ int pinoLED = 3;   //LED NA PWM PARA VARIAÇÃO DE INTENSIDADE
 
 void setup()
 {
-	pinMode(pinoLDR, INPUT);
-  	pinMode(pinoLED, OUTPUT);
+    pinMode(pinoLDR, INPUT);
+    pinMode(pinoLED, OUTPUT);
     Serial.begin(9600);
 }
 
